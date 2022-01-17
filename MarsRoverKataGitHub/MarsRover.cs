@@ -35,6 +35,9 @@
             }
         }
 
+        public string ReceivePosition() =>
+            $"{this.X_Position} : {this.Y_Position} : {this.Direction.ToString()}";
+
         public void Movement(InputDirection input)
         {
         }
