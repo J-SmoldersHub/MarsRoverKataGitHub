@@ -75,7 +75,7 @@ namespace MarsRoverKataGitHubTestd
             // Assert
             Assert.Equal(0, rover.X_Position);
             Assert.Equal(1, rover.Y_Position);
-            Assert.Equal(CompassDirection.E, rover.Direction);
+            Assert.Equal(CompassDirection.S, rover.Direction);
         }
 
         [Fact]
