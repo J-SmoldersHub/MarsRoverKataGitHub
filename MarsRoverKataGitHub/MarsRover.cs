@@ -59,7 +59,9 @@
             }
             if (this.Direction == CompassDirection.W)
             {
-                X_Position--;
+                X_Position = X_Position == 0
+                    ? 9
+                    : --X_Position;
             }
         }
 
