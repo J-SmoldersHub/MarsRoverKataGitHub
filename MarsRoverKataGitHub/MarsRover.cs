@@ -26,7 +26,7 @@
                 }
                 if (c == 'R')
                 {
-
+                    TurnRight();
                 }
                 if (c == 'L')
                 {
@@ -51,7 +51,7 @@
 
         private void TurnRight()
         {
-
+            Direction++;
         }
     }
 }
