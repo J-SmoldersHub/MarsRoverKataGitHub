@@ -22,7 +22,7 @@
             {
                 if (c == 'M')
                 {
-                    Y_Position++;
+                    MoveForward();
                 }
                 if (c == 'R')
                 {
@@ -40,10 +40,19 @@
 
         public void Movement(InputDirection input)
         {
+            // not te be implemented yet
         }
 
         private void MoveForward()
         {
+            if (this.Direction == CompassDirection.N)
+            {
+                Y_Position++;
+            }
+            if (this.Direction == CompassDirection.E)
+            {
+                X_Position++;
+            }
 
         }
 
