@@ -51,7 +51,9 @@
             }
             if (this.Direction == CompassDirection.E)
             {
-                X_Position++;
+                X_Position = X_Position == 9
+                    ? 0
+                    : ++X_Position;
             }
             if (this.Direction == CompassDirection.S)
             {
