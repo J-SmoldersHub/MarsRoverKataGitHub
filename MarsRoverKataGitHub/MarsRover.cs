@@ -47,7 +47,9 @@
         {
             if (this.Direction == CompassDirection.N)
             {
-                Y_Position++;
+                Y_Position = Y_Position == 9
+                    ? 0
+                    : ++Y_Position;
             }
             if (this.Direction == CompassDirection.E)
             {
