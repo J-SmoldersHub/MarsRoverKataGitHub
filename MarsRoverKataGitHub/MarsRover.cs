@@ -51,7 +51,14 @@
 
         private void TurnRight()
         {
-            Direction++;
+            if (Direction == CompassDirection.W)
+            {
+                Direction = CompassDirection.N;
+            }
+            else
+            {
+                Direction++;
+            }
         }
     }
 }
