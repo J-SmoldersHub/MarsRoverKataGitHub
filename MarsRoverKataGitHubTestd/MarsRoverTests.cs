@@ -92,5 +92,65 @@ namespace MarsRoverKataGitHubTestd
             Assert.Equal(0, rover.Y_Position);
             Assert.Equal(CompassDirection.N, rover.Direction);
         }
+
+        [Fact]
+        public void MarsRoverTurnLeft()
+        {
+            // Arrange
+            var rover = new MarsRover();
+
+            // Act
+            rover.Movement("L");
+
+            // Assert
+            Assert.Equal(0, rover.X_Position);
+            Assert.Equal(0, rover.Y_Position);
+            Assert.Equal(CompassDirection.W, rover.Direction);
+        }
+
+        [Fact]
+        public void MarsRoverTurnLeftTwice()
+        {
+            // Arrange
+            var rover = new MarsRover();
+
+            // Act
+            rover.Movement("LL");
+
+            // Assert
+            Assert.Equal(0, rover.X_Position);
+            Assert.Equal(0, rover.Y_Position);
+            Assert.Equal(CompassDirection.S, rover.Direction);
+        }
+
+        [Fact]
+        public void MarsRoverTurnLeftThreeTimes()
+        {
+            // Arrange
+            var rover = new MarsRover();
+
+            // Act
+            rover.Movement("LLL");
+
+            // Assert
+            Assert.Equal(0, rover.X_Position);
+            Assert.Equal(0, rover.Y_Position);
+            Assert.Equal(CompassDirection.E, rover.Direction);
+        }
+
+        [Fact]
+        public void MarsRoverTurnLeftFourTimes()
+        {
+            // Arrange
+            var rover = new MarsRover();
+
+            // Act
+            rover.Movement("LLLL");
+
+            // Assert
+            Assert.Equal(0, rover.X_Position);
+            Assert.Equal(0, rover.Y_Position);
+            Assert.Equal(CompassDirection.N, rover.Direction);
+        }
     }
 }
