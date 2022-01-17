@@ -30,7 +30,7 @@
                 }
                 if (c == 'L')
                 {
-
+                    TurnLeft();
                 }
             }
         }
@@ -46,7 +46,14 @@
 
         private void TurnLeft()
         {
-
+            if (Direction == CompassDirection.N)
+            {
+                Direction = CompassDirection.W;
+            }
+            else
+            {
+                Direction--;
+            }
         }
 
         private void TurnRight()
