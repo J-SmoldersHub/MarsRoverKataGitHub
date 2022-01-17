@@ -1,21 +1,57 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MarsRoverKataGitHub
+﻿namespace MarsRoverKataGitHub
 {
     public class MarsRover
     {
         public int X_Position { get; set; }
         public int Y_Position { get; set; }
 
+        public CompassDirection Direction { get; set; }
 
         public MarsRover()
         {
             X_Position = 0;
             Y_Position = 0;
+            Direction = CompassDirection.N;
+        }
+
+        public void Movement(string input)
+        {
+            var array = input.ToCharArray();
+
+            foreach(var c in array)
+            {
+                if (c == 'M')
+                {
+
+                }
+                if (c == 'R')
+                {
+
+                }
+                if (c == 'L')
+                {
+
+                }
+            }
+        }
+
+        public void Movement(InputDirection input)
+        {
+        }
+
+        private void MoveForward()
+        {
+
+        }
+
+        private void TurnLeft()
+        {
+
+        }
+
+        private void TurnRight()
+        {
+
         }
     }
 }
