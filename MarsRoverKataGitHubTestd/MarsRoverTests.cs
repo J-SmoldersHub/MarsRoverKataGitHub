@@ -140,6 +140,21 @@ namespace MarsRoverKataGitHubTestd
         }
 
         [Fact]
+        public void MarsRoverMovingUpOverLapping()
+        {
+            // Arrange
+            var rover = new MarsRover();
+
+            // Act
+            rover.Movement("MMMMMMMMMMMM");
+
+            // Assert
+            Assert.Equal(0, rover.X_Position);
+            Assert.Equal(2, rover.Y_Position);
+            Assert.Equal(CompassDirection.N, rover.Direction);
+        }
+
+        [Fact]
         public void MarsRoverTurnRight()
         {
             // Arrange
