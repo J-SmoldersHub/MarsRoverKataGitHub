@@ -22,7 +22,7 @@
             {
                 if (c == 'M')
                 {
-
+                    Y_Position++;
                 }
                 if (c == 'R')
                 {
