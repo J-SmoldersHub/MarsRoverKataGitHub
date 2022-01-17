@@ -57,6 +57,10 @@
             {
                 Y_Position--;
             }
+            if (this.Direction == CompassDirection.W)
+            {
+                X_Position--;
+            }
         }
 
         private void TurnLeft()
