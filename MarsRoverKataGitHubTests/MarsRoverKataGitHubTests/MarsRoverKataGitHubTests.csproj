@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MarsRoverKataGitHub\MarsRoverKataGitHub.csproj" />
+    <ProjectReference Include="..\..\MarsRoverKataGitHub\MarsRoverKataGitHub.csproj" />
   </ItemGroup>
 
 </Project>
